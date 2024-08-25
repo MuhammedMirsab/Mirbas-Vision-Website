@@ -39,10 +39,11 @@
     <div id="sec-1" style="z-index: 0;">
         
         <div >
-        <h1 class="main-text"  >Welcome to <br> <span class="color-change">Mirbas</span> <span class="color-change">Vision</span></h1>
+        <h1 class="main-text"  >Welcome To <br> <span class="highlight"><span class="color-change">Mirbas</span> <span class="color-change" style="color: #FF00FF;">Vision</span></span></h1>
         <p class="para">Step into the world of creativity and inspiration with Mirbas Vision! Whether you're looking for educational content, fun shorts, or live updates, we bring you fresh and engaging videos that spark curiosity and fuel your passion. Join us on this exciting journey, explore the endless possibilities, and don't forget to subscribe for more amazing content!</p>
         </div>
         <div>
+            <img class="growth-img-gif" src="Images/sec-1-grafics.gif" alt="growth-gif">
             <img class="shape-graphics-img" src="https://assets.website-files.com/63902f1c487649a4346ac133/63902f1c487649d6266ac178_shape-01.svg" loading="lazy" alt="" class="img-shape" style="will-change: transform; transform: translate3d(0.654656rem, 0.71225rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
         </div>
             
@@ -247,6 +248,16 @@
             aboutLink.classList.remove('about-active');
         }
         });
+
+        
+      window.addEventListener('scroll',(e)=>{
+        const nav = document.querySelector('#navbar');
+        if(window.pageYOffset>0){
+          nav.classList.add("add-shadow");
+        }else{
+          nav.classList.remove("add-shadow");
+        }
+      });
      </script>
 </body>
 </html>

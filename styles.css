@@ -10,7 +10,6 @@ body {
 #navbar {
     font-size: 14px;
     font-family: Inter, sans-serif;
-    background-color: #F3F5FC;
     display: flex;
     justify-content: space-around;
     padding: 15px 0 15px 0;
@@ -67,6 +66,13 @@ body {
     border-bottom: 4px solid #fcbf49;
     font-weight: 600;
   }
+
+.add-shadow {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+    background-color: white;
+    transition: all 0.5s ease-out allow-discrete;
+}
+  
   
 /* Section - 1 */
 #sec-1 {
@@ -82,7 +88,7 @@ body {
 
 .main-text {
     margin: 0 0 3rem 0;
-    font-size: 3.25rem;
+    font-size: 3.95rem;
     line-height: 1.2;
     font-weight: 700;
 }
@@ -95,9 +101,22 @@ body {
 }
 
 .shape-graphics-img {
-    margin: 0 2px 0 0;
+    margin-top: -140px;
+    z-index: 5;
+    position: relative;
 }
 
+.growth-img-gif {
+    position: absolute;
+    margin: 0 0 0 40px;
+    width: 600px;
+    border-radius: 10px;
+    z-index: 900;
+    box-shadow: 20px 0px 20px deepskyblue ;
+}
+.highlight{
+    background-color: yellow;
+}
 .color-change:hover {
     color: #FF00FF;
 }
@@ -107,7 +126,7 @@ body {
 #sec-2 {
     margin: 0 0 0 0;
     padding: 50px 50px 100px 50px;
-    background-color:#F3F4F6;
+    background-color:#F3F5FC;
 }
 
 .content-main {
