@@ -1,0 +1,453 @@
+/* Main / Common */
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+.main-heading {
+    color: #1F2937;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub-heading {
+    font-family: 'Poppins', sans-serif;
+    color: #4B5563;
+}
+
+.body-text {
+    color: #6B7280;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.btn {
+    background-color: #3B82F6; 
+    color: #FFFFFF; 
+    border: 1px solid #1D4ED8; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    cursor: pointer;
+}
+/* Nav Bar */
+#navbar {
+    font-family: "Lobster Two", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #e9edc9;
+    padding: 10px 0;
+    box-shadow: 2px 2px #e9edc9;
+    position: fixed;
+    top: 0;
+  z-index: 99;
+    width: -webkit-fill-available;
+    background: white !important;
+}
+
+#main-logo-img {
+    width: 200px;
+    margin: 0;
+}
+
+.nav-link {
+    color: #606060;
+    font-size: 20px;
+    margin: 0 40px;
+    line-height: 2;
+}
+
+#yt-channel-btn {
+    font-family: "Rubik", sans-serif;
+    padding: 15px 30px;
+    margin: 0;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    /* No need to remove the border if you want to keep it */
+}
+
+#yt-channel-btn:hover {
+    background: red;
+    color: white; /* Optional: Change text color on hover */
+}
+
+#yt-channel-btn:hover i.fa-youtube {
+    color: white !important;
+}
+
+.nav-link:hover {
+    border-bottom: 4px solid #fcbf49;
+    box-shadow: 2px 2px white;
+    color: black;
+    padding-bottom: 2px;
+    font-weight: 700;
+}
+
+.nav-link.about-active {
+    border-bottom: 4px solid #fcbf49;
+    font-weight: 700;
+  }
+  
+/* Section - 1 */
+#sec-1 {
+    
+    padding: 120px 0 0 0;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    background-color:#ffffff1c ;
+
+}
+
+.thumbnail-images {
+    position: relative;
+    opacity: 10%;
+    width: 1000px;
+    box-shadow: 3px 3px black;
+
+}
+
+#thumbnail-images-div {
+    border-radius: 10px;
+}
+
+.main-text {
+    font-family: "Lobster Two", sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.para {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color-change:hover {
+    color: #FF00FF;
+}
+
+/* Section - 2 */
+
+#sec-2 {
+    margin: 100px 0 0 0;
+    padding: 50px 50px 100px 50px;
+    background-color:#F3F4F6;
+}
+
+.content-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec-2-heading {
+    
+    margin-bottom: 20px;
+    
+}
+
+.content-items {
+    border-radius: 8px; 
+    margin-bottom: 20px;
+    background-color: white;
+    border: 10px solid #916C80;
+    padding: 0 10px 50px 10px;
+    text-align: center;
+    
+    
+}
+
+.content-text {
+    
+    margin-bottom: 10px;
+}
+
+.playlist-btn {
+
+    background-color: #3B82F6; 
+    color: #FFFFFF; 
+    border: 1px solid #1D4ED8; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    cursor: pointer;
+
+}
+
+.playlist-btn:hover {
+    background-color: #2563EB;
+}
+
+.content-sub-head {
+    color: #6B7280;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+  }
+
+/* About Section */
+
+#about-section {
+    margin: 60px 40px 0 40px;
+    padding-bottom: 100px;
+    background-color: #ffffff1c;
+
+}
+
+.about-sec-heading {
+    font-weight: 700;
+    font-size: 2rem;
+    
+    margin-right: 20px;
+}
+
+.welcome-text {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #3B82F6 ;  
+}
+
+
+
+.ab-pragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #4B5563;
+
+
+}
+
+#ab-content-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.see-more-link {
+    background-color: #3B82F6; 
+    color: #FFFFFF; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    border: #1D4ED8;
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+    
+}
+
+.see-more-link:hover {
+    background-color: #2563EB;
+}
+
+/* Comments Section */
+
+#comment-sec {
+    background-color:#F3F4F6;
+    padding: 40px 0 30px 10px;
+    text-align: center;
+
+}
+
+
+.comments-main-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.commenters-profile-img {
+    border-radius: 80px;
+    border: 5px solid rgb(170, 255, 0);
+}
+
+.commenters-name {
+    color: #4B5563;
+    line-height: 1.5;
+    text-decoration: none;
+    
+}
+
+.commenters-name:hover {
+    color: blue;
+}
+
+.comment-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #4B5563;
+    /* background-color: white; */
+    box-shadow: 0 0 20px wheat;
+}
+
+.commented-video-details-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.comment-body {
+    margin: 20px 10px 20px 10px;
+}
+
+
+.commented-video-img {
+    width: 49px;
+    padding: 10px;
+}
+
+.commented-video-title {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #4B5563;
+}
+
+.commented-video-details-div:hover .commented-video-title {
+    display: none;
+}
+
+.commented-video-details-div:hover::before {
+    content: "See more comments from this video";
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: #4B5563;
+}
+
+.b {
+    border: 5px solid rgb(27, 84, 6);
+}
+
+/* Suggestion Section */
+
+#suggest-section {
+    padding: 0 20px;
+    margin: 40px 0 30px 0;
+    text-align: center;
+}
+
+.suggestion-input-main-container {
+    display: inline-flex;
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 2px;
+    margin: 10px;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
+
+
+    
+}
+
+form {
+    width: 50rem;
+    margin: 20px;
+}
+
+
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 90%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 95%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
