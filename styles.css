@@ -7,6 +7,27 @@ body {
     line-height: 1.5;
     scrollbar-width: thin;
     scroll-behavior: smooth;
+    overflow-x: hidden; 
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3.125rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgba(32, 26, 45, .6);
 }
 /* Nav Bar */
 #navbar {
@@ -55,6 +76,7 @@ body {
     color: #f3f5fc;
     font-weight: 600;
     text-align: center;
+    transition: all .10s cubic-bezier(.89,1.02,1,-0.74) .2s ;
 }
 
 .nav-link:hover {
@@ -74,7 +96,10 @@ body {
     background-color: white;
     transition: all 0.5s ease-out allow-discrete;
 }
-  
+
+#yt-channel-btn:hover {
+    background-color: #000;
+}
   
 /* Section - 1 */
 #sec-1 {
@@ -109,6 +134,7 @@ body {
 }
 
 .growth-img-gif {
+    
     position: absolute;
     margin: 0 0 0 40px;
     width: 600px;
@@ -126,62 +152,96 @@ body {
 /* Section - 2 */
 
 #sec-2 {
-    margin: 0 0 0 0;
-    padding: 50px 50px 100px 50px;
-    background-color:#F3F5FC;
+    padding: 8.5rem 1.8rem;
+    background-color:white;
+    position: relative;
+    left: -50px;
+    right: 50px;
+    z-index: 2;
+    width: 100%;
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
+.headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7rem;
+    grid-column-gap: 2.5rem;
+    margin-left: 50px;
+}
 .content-main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .sec-2-heading {
-    
     margin-bottom: 20px;
-    
 }
 
 .content-items {
-    width: 222.425px;
-    border-radius: 8px; 
-    margin-bottom: 20px;
-    background-color: white;
-    border: 2px solid #916C80;
-    padding: 0 10px 50px 10px;
-    text-align: center;
-    box-shadow: 2px 0 20px rgb(148, 126, 227);
-    
-    
+
+    width: 213.200px;
+    margin-bottom: 0;
+    background-color: #f3fcf4;
+    padding: 50px 10px 0 10px;
+    border: .0625rem solid #000;
+    border-radius: 1rem;
+    height: 307.688px;
+    border-color: rgba(28, 185, 119, .12);
+    margin: 16px;
+    transition: all .10s ease-out;
 }
 
+.content-items:hover {
+    width: 250px ;
+    box-shadow: 0px 0px 20px chocolate;
+}
 .content-text {
-    
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
-.playlist-btn {
+.content-break-point {
+    width: 190px;
+    height: .0625rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    opacity: .10;
+    padding: 0;
+    height: 0.1px;
+}
 
-    background-color: #3B82F6; 
-    color: #FFFFFF; 
-    border: 1px solid #1D4ED8; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    font-family: 'Roboto', sans-serif;
+
+.icon {
+    padding: 10px;
+    width: 30px;
+    height: 25px;
+    margin-bottom: 70px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+
+.playlist-link {
+    text-decoration: none;
     margin: 0;
-    cursor: pointer;
+    padding: 0;
 
-}
-
-.playlist-btn:hover {
-    background-color: #2563EB;
 }
 
 .content-sub-head {
-    color: #6B7280;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    color: inherit;
+    font-size: .8rem;
+    padding-left: 10px;
+    font-weight: 500;
   }
+
+  
 
 /* About Section */
 
@@ -237,7 +297,6 @@ body {
 .see-more-link:hover {
     background-color: #2563EB;
 }
-
 /* Comments Section */
 
 #comment-sec {
