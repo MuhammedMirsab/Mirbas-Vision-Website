@@ -323,19 +323,17 @@ p {
 }
 
 .commenters-profile-img {
-    border-radius: 80px;
-    border: 5px solid rgb(170, 255, 0);
+    display: block;
+    width: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 0;
+    max-width: 100%;
 }
 
 .commenters-name {
-    color: #4B5563;
-    line-height: 1.5;
     text-decoration: none;
     
-}
-
-.commenters-name:hover {
-    color: blue;
 }
 
 .comment-text {
@@ -358,13 +356,28 @@ p {
 }
 
 .comment-body {
-    margin: 20px 10px 20px 10px;
+    border: .0625rem solid rgba(95, 179, 189, .2);
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    -webkit-transition: .6s cubic-bezier(.215, .61, .355, 1);
+    transition: .6s cubic-bezier(.215, .61, .355, 1);
+}
+
+.reveiwer-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
 }
 
 
 .commented-video-img {
-    width: 49px;
-    padding: 10px;
+    
+
 }
 
 .commented-video-title {
