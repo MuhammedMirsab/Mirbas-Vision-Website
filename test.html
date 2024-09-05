@@ -1,1 +1,31 @@
-<img src="https://assets.website-files.com/63902f1c487649a4346ac133/63902f1c487649d6266ac178_shape-01.svg" loading="lazy" alt="" class="img-shape" style="will-change: transform; transform: translate3d(0.654656rem, 0.71225rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+<!-- <img src="https://assets.website-files.com/63902f1c487649a4346ac133/63902f1c487649d6266ac178_shape-01.svg" loading="lazy" alt="" class="img-shape" style="will-change: transform; transform: translate3d(0.654656rem, 0.71225rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"> -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <right>
+        <ul id="nav">
+          <li><a href="page1.html">link 1</a></li>
+          <li><a href="page2.html">link 2</a></li>
+          <li><a href="page3.html">link 3</a></li>
+        </ul>
+      </right>
+      <left>
+        <div id="content">msjjk</div>
+      </left>
+      
+      <script>
+        $(function() {
+            $("#nav > li > a").on("click",function(e) {
+            e.preventDefault(); // stop the link
+            $("#content").load(this.href); // href must come from same origin as the script
+            });
+     });
+     </script>
+      
+ </body>
+ </html>

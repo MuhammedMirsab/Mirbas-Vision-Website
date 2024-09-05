@@ -57,8 +57,8 @@ p {
     font-size: .875rem;
     line-height: 1.2rem;
     text-decoration: none;
+    transition: all .3s linear;
 }
-
 
 #yt-channel-btn {
     -webkit-text-size-adjust: 100%;
@@ -80,14 +80,15 @@ p {
 }
 
 .nav-link:hover {
-    border-bottom: 4px solid #fcbf49;
+    border-bottom: 2px solid #fcbf49;
     color: black;
-    padding-bottom: 2px;
+    padding-bottom: 0.5px;
     font-weight: 600;
+    
 }
 
 .nav-link.about-active {
-    border-bottom: 4px solid #fcbf49;
+    border-bottom: 3px solid #fcbf49;
     font-weight: 600;
   }
 
@@ -193,12 +194,12 @@ p {
     height: 307.688px;
     border-color: rgba(28, 185, 119, .12);
     margin: 16px;
-    transition: all .10s ease-out;
+    transition: all .2s linear;
 }
 
 .content-items:hover {
     width: 250px ;
-    box-shadow: 0px 0px 20px chocolate;
+    box-shadow: 0px 0px 20px ;
 }
 .content-text {
     margin-bottom: 10px;
@@ -301,6 +302,7 @@ p {
     text-decoration: none; 
     font-family: 'Roboto', sans-serif;
     margin-top: 50px;
+    transition: all .5s ease-in-out;
     
 }
 
@@ -310,16 +312,17 @@ p {
 /* Comments Section */
 
 #comment-sec {
-    background-color:#F3F4F6;
-    padding: 40px 0 30px 10px;
+    background-color:white;
+    padding: 136px 0;
     text-align: center;
-
+    margin: 0 30px;
 }
 
 
 .comments-main-div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: left;
 }
 
 .commenters-profile-img {
@@ -333,60 +336,60 @@ p {
 
 .commenters-name {
     text-decoration: none;
-    
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #201a2d;
 }
 
 .comment-text {
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5;
-    color: #4B5563;
-    /* background-color: white; */
-    box-shadow: 0 0 20px wheat;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #201a2d;
+    
 }
 
 .commented-video-details-div {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    border: 2px solid black;
-    border-radius: 20px;
     padding: 5px 10px;
 }
 
 .comment-body {
     border: .0625rem solid rgba(95, 179, 189, .2);
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
+    width: 437.462px;
+    height: 185.962px;
+    margin: 5px;
     padding: 2rem;
     border-radius: 1rem;
-    background-color: #fff;
+    background-color: #f3fcf4;
     -webkit-transition: .6s cubic-bezier(.215, .61, .355, 1);
     transition: .6s cubic-bezier(.215, .61, .355, 1);
 }
 
 .reveiwer-details {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 2rem;
     align-items: center;
+    color: inherit;
 }
 
 
 .commented-video-img {
-    
+    width: 49px;
+    padding: 10px;
 
 }
 
 .commented-video-title {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.7rem;
+    text-align: center;
+    font-size: 0.6rem;
     font-weight: 600;
     line-height: 1.5;
-    color: #4B5563;
 }
 
 .commented-video-details-div:hover .commented-video-title {
@@ -396,23 +399,27 @@ p {
 .commented-video-details-div:hover::before {
     content: "See more comments from this video";
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
-    font-weight: 900;
+    font-weight: 600;
     line-height: 1.5;
     color: #4B5563;
 }
-
-.b {
-    border: 5px solid rgb(27, 84, 6);
+/* Suggestion Section */
+#suggest-section {
+    padding: 136px 0 150px 10px;
+    background-color: #F3F5FC;
+    text-align: center;
 }
 
-/* Suggestion Section */
+.suggest-sec-heading {
+    margin-bottom: 30px;
+}
 
-#suggest-section {
-    padding: 0 20px;
-    margin: 40px 0 30px 0;
+.sub-heading-suggest {
+    margin-bottom: 50px;
+    width: 1000px;
     text-align: center;
+    padding-left: 230px;
 }
 
 .suggestion-input-main-container {
@@ -422,9 +429,6 @@ p {
     border-radius: 2px;
     margin: 10px;
     box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
-
-
-    
 }
 
 form {
@@ -522,3 +526,38 @@ form {
   appearance: radio;
 }
 
+
+/* Footer */
+#footer-sec{
+ margin: 96px 24px 64px 24px;
+ padding-bottom: 50px;
+}
+
+#footbar {
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 15px 0;
+    top: 0;
+    z-index: 99;
+    width: -webkit-fill-available; 
+}
+
+.footer-second-part {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0 0 0;
+}
+
+.social-links {
+    margin: 0 10px;
+    border-radius: 50px;
+    padding: 20px 15px;
+    border: 2px solid rgba(32, 26, 45, .6);;
+}
+
+.footer-para {
+    width: 300px;
+    font-size: 13px;
+}
