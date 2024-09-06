@@ -18,22 +18,30 @@
 </head>
 <body>
     <!-- Nav Bar -->
-    <div id="navbar" style="z-index: 1000000000;">
-        <div>
-           <a href="index.html"><img id="main-logo-img" src="Images\nav logo.png" alt="logo"></a>
-            
+    <div id="navbar">
+        <a href="index.html"><img id="main-logo-img" src="Images/nav logo.png" alt="logo"></a>
+        
+        <!-- Nav links -->
+        <div id="nav-links">
+            <a class="nav-link" href="#">Videos</a>
+            <a class="nav-link" href="#">Shorts</a>
+            <a class="nav-link" href="#">Live</a>
+            <a class="nav-link" href="#">Posts</a>
+            <a class="nav-link" href="#about-section">About</a>
         </div>
-        <div>
-            <a style="color: black; text-decoration: none;" href="#"><span class="nav-link">Videos</span></a>
-            <a style="color: black; text-decoration: none;" href="#"><span class="nav-link">Shorts</span></a>
-            <a style="color: black; text-decoration: none;" href="#"><span class="nav-link">Live</span></a>
-            <a style="color: black; text-decoration: none;" href="#"><span class="nav-link">Posts</span></a>
-            <a style="color: black; text-decoration: none;" href="#about-section"><span class="nav-link about-link">About</span></a>
-        </div>
-        <div>
-            <a href="https://www.youtube.com/@MirbasVisionMirsab"  target="_blank"><button id="yt-channel-btn"><i class="fa-brands fa-youtube" style="color: white;margin-right: 4px;"></i>Mirbas Vison</button></a>
+        
+        <!-- Mirbas Vision button (Visible on larger screens) -->
+        <button id="yt-channel-btn">
+            <i class="fa-brands fa-youtube" style="color: white; margin-right: 4px;"></i>Mirbas Vision
+        </button>
+    
+        <!-- Hamburger menu icon (Visible on mobile) -->
+        <div id="menu-icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
         </div>
     </div>
+    
+    
 
     <!-- Secction - 1 -->
     <div id="sec-1" style="z-index: 0;">
@@ -179,72 +187,111 @@
     </div>
 
     <!-- comments section-->
-    <div id="comment-sec">
-        <h1 class="c-sec-heading main-heading" style="margin-bottom: 4rem;">Hear What Our <br> Veiwers Say</h1>
-        <div class="comments-main-div">
-            <div class="comment-body">
-                <div class="reveiwer-details">
-                    <img class="commenters-profile-img" src="Images/Profile-1.jpg" alt="commenter's profile picture on Youtube">
-                    <a style="text-decoration: none;" href="https://www.youtube.com/@shareejakk9883"><h3 class="commenters-name">@shareejakk9883</h3></a>
-                </div>
-                <p class="comment-text">"Great  speech 👍"</p>
-                <div class="commented-video-details-div"></a>
-                    <a  href="https://youtu.be/Bf7k4PfpTXc?si=LZ9r51o5opU4KlUM" target="_blank"><img class="commented-video-img" src="Images/video-1.jpg" alt="commented-video-thumbnail"></a>
-                    <a class="commented-video-title" href="https://youtu.be/Bf7k4PfpTXc?si=LZ9r51o5opU4KlUM" target="_blank">Speech about Effect of technology on our health || 3 minutes || In English</a>
-                </div>
-            </div>
+<div id="comment-sec">
+    <h1 class="c-sec-heading main-heading" style="margin-bottom: 4rem;">Hear What Our <br> Viewers Say</h1>
 
-            <div class="comment-body">
-                <div class="reveiwer-details">
-                    <img class="commenters-profile-img" src="Images/Profile-2.jpg" alt="commenter's profile picture on Youtube">
-                    <a style="text-decoration: none;" href="https://www.youtube.com/@shahulhameed9909"><h2 class="commenters-name">@shahulhameed9909</h2></a>
-                </div>
-                <p class="comment-text">"🎉 very well said 🎉"</p>
-                <div class="commented-video-details-div"></a>
-                    <a  href="https://youtu.be/Bf7k4PfpTXc?si=LZ9r51o5opU4KlUM" target="_blank"><img class="commented-video-img" src="Images/video-1.jpg" alt="commented-video-thumbnail"></a>
-                    <a class="commented-video-title" href="https://youtu.be/Bf7k4PfpTXc?si=LZ9r51o5opU4KlUM" target="_blank">Speech about Effect of technology on our health || 3 minutes || In English</a>
-                </div>
+    <!-- First Row (3 Comments) -->
+    <div class="comments-main-div">
+        <!-- Comment-1 by Shareejakk9883 -->
+        <div class="comment-body">
+            <div class="reveiwer-details">
+                <img class="commenters-profile-img" src="Images/Profile-1.jpg" alt="commenter's profile picture on Youtube">
+                <a style="text-decoration: none;" href="https://www.youtube.com/@shareejakk9883">
+                    <h3 class="commenters-name">@shareejakk9883</h3>
+                </a>
             </div>
-            <div class="comment-body">
-                <div class="comments-main-div">
-
-                </div>
-                <img class="commenters-profile-img" src="Images/Profile-3.jpg" alt="commenter's profile picture on Youtube">
-                <a style="text-decoration: none;" href="https://www.youtube.com/@abdullatheefv.p8890"><h2 class="commenters-name">@abdullatheefv.p8890</h2></a>
-                <p class="comment-text">"🎉🎉🎉great"</p>
-                <div class="commented-video-details-div"></a>
-                    <a  href="https://youtu.be/zej38-uhLE8?si=8oQ_Bh1FddoycqNY" target="_blank"><img class="commented-video-img" src="Images/video-2.jpg" alt="commented-video-thumbnail"></a>
-                    <a class="commented-video-title" href="https://youtu.be/zej38-uhLE8?si=8oQ_Bh1FddoycqNY" target="_blank">EASY WAY TO MULTIPLY TABLE OF 8 || MATHS TIPS & TRICKS || MIRBAS VISION</a>
-                </div>
+            <p class="comment-text">"Great speech 👍"</p>
+            <div class="commented-video-details-div">
+                <a href="https://youtu.be/Bf7k4PfpTXc?si=LZ9r51o5opU4KlUM" target="_blank">
+                    <img class="commented-video-img" src="Images/video-1.jpg" alt="commented-video-thumbnail">
+                </a>
+                <a class="commented-video-title" href="https://youtu.be/Bf7k4PfpTXc?si=LZ9r51o5opU4KlUM" target="_blank">
+                    Speech about Effect of technology on our health || 3 minutes || In English
+                </a>
             </div>
         </div>
-        <div class="comments-main-div">
-            <div class="comment-body">
-                <div class="comments-main-div">
 
-                </div>
-                <img class="commenters-profile-img" src="Images/Profile-4.jpg" alt="commenter's profile picture on Youtube">
-                <a style="text-decoration: none;" href="https://www.youtube.com/@12hanirashid750"><h2 class="commenters-name">@12hanirashid75</h2></a>
-                <p class="comment-text">"Good"</p>
-                <div class="commented-video-details-div"></a>
-                    <a  href="https://youtu.be/i2f1PzJlBdQ?si=f2pxNvwM7X4YpVJN" target="_blank"><img class="commented-video-img" src="Images/video-3.jpg" alt="commented-video-thumbnail"></a>
-                    <a class="commented-video-title" href="https://youtu.be/i2f1PzJlBdQ?si=f2pxNvwM7X4YpVJN" target="_blank">RUDDAF PARK TAIF || TAIF PART-6 || MIRBAS VISION</a>
-                </div>
+        <!-- Comment-2 by Shahulhameed -->
+        <div class="comment-body">
+            <div class="reveiwer-details">
+                <img class="commenters-profile-img" src="Images/Profile-2.jpg" alt="commenter's profile picture on Youtube">
+                <a style="text-decoration: none;" href="https://www.youtube.com/@shahulhameed9909">
+                    <h3 class="commenters-name">@shahulhameed9909</h3>
+                </a>
             </div>
-            <div class="comment-body">
-                <div class="comments-main-div">
-                    <img class="commenters-profile-img b" src="Images/Profile - 5.jpg" alt="commenter's profile picture on Youtube">
-                <a style="text-decoration: none;" href="https://www.youtube.com/@FUADFAVOURSANINFUAD"><h3 class="commenters-name">@FUADFAVOURSANINFUAD</h3></a>
-                </div>
-                <p class="comment-text">"🤩"</p>
-                <div class="commented-video-details-div"></a>
-                    <a  href="https://youtu.be/i2f1PzJlBdQ?si=f2pxNvwM7X4YpVJN" target="_blank"><img class="commented-video-img" src="Images/video-3.jpg" alt="commented-video-thumbnail"></a>
-                    <a class="commented-video-title" href="https://youtu.be/i2f1PzJlBdQ?si=f2pxNvwM7X4YpVJN" target="_blank">RUDDAF PARK TAIF || TAIF PART-6 || MIRBAS VISION</a>
-                </div>
+            <p class="comment-text">"🎉 very well said 🎉"</p>
+            <div class="commented-video-details-div">
+                <a href="https://youtu.be/Bf7k4PfpTXc?si=LZ9r51o5opU4KlUM" target="_blank">
+                    <img class="commented-video-img" src="Images/video-1.jpg" alt="commented-video-thumbnail">
+                </a>
+                <a class="commented-video-title" href="https://youtu.be/Bf7k4PfpTXc?si=LZ9r51o5opU4KlUM" target="_blank">
+                    Speech about Effect of technology on our health || 3 minutes || In English
+                </a>
             </div>
+        </div>
 
+        <!-- Comment-3 by Abdullatheef -->
+        <div class="comment-body">
+            <div class="reveiwer-details">
+                <img class="commenters-profile-img" src="Images/Profile-3.jpg" alt="commenter's profile picture on Youtube">
+                <a style="text-decoration: none;" href="https://www.youtube.com/@abdullatheefv.p8890">
+                    <h3 class="commenters-name">@abdullatheefv.p8890</h3>
+                </a>
+            </div>
+            <p class="comment-text">"🎉🎉🎉 great"</p>
+            <div class="commented-video-details-div">
+                <a href="https://youtu.be/zej38-uhLE8?si=8oQ_Bh1FddoycqNY" target="_blank">
+                    <img class="commented-video-img" src="Images/video-2.jpg" alt="commented-video-thumbnail">
+                </a>
+                <a class="commented-video-title" href="https://youtu.be/zej38-uhLE8?si=8oQ_Bh1FddoycqNY" target="_blank">
+                    EASY WAY TO MULTIPLY TABLE OF 8 || MATHS TIPS & TRICKS || MIRBAS VISION
+                </a>
+            </div>
         </div>
     </div>
+
+    <!-- Second Row (2 Comments) -->
+    <div class="comments-main-div">
+        <!-- Comment-4 by Hanirashid -->
+        <div class="comment-body">
+            <div class="reveiwer-details">
+                <img class="commenters-profile-img" src="Images/Profile-4.jpg" alt="commenter's profile picture on Youtube">
+                <a style="text-decoration: none;" href="https://www.youtube.com/@12hanirashid750">
+                    <h3 class="commenters-name">@12hanirashid75</h3>
+                </a>
+            </div>
+            <p class="comment-text">"Good"</p>
+            <div class="commented-video-details-div">
+                <a href="https://youtu.be/i2f1PzJlBdQ?si=f2pxNvwM7X4YpVJN" target="_blank">
+                    <img class="commented-video-img" src="Images/video-3.jpg" alt="commented-video-thumbnail">
+                </a>
+                <a class="commented-video-title" href="https://youtu.be/i2f1PzJlBdQ?si=f2pxNvwM7X4YpVJN" target="_blank">
+                    RUDDAF PARK TAIF || TAIF PART-6 || MIRBAS VISION
+                </a>
+            </div>
+        </div>
+
+        <!-- Comment-5 by Fuad -->
+        <div class="comment-body">
+            <div class="reveiwer-details">
+                <img class="commenters-profile-img" src="Images/Profile - 5.jpg" alt="commenter's profile picture on Youtube">
+                <a style="text-decoration: none;" href="https://www.youtube.com/@FUADFAVOURSANINFUAD">
+                    <h3 class="commenters-name">@FUADFAVOURSANINFUAD</h3>
+                </a>
+            </div>
+            <p class="comment-text">"🤩"</p>
+            <div class="commented-video-details-div">
+                <a href="https://youtu.be/i2f1PzJlBdQ?si=f2pxNvwM7X4YpVJN" target="_blank">
+                    <img class="commented-video-img" src="Images/video-3.jpg" alt="commented-video-thumbnail">
+                </a>
+                <a class="commented-video-title" href="https://youtu.be/i2f1PzJlBdQ?si=f2pxNvwM7X4YpVJN" target="_blank">
+                    RUDDAF PARK TAIF || TAIF PART-6 || MIRBAS VISION
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <!-- Suggestion Section -->
     <div id="suggest-section">
@@ -324,5 +371,16 @@
         }
       });
      </script>
+
+<script>
+    function toggleMenu() {
+        var navLinks = document.getElementById("nav-links");
+        if (navLinks.style.display === "flex") {
+            navLinks.style.display = "none";
+        } else {
+            navLinks.style.display = "flex";
+        }
+    }
+</script>
 </body>
 </html>

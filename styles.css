@@ -1,9 +1,9 @@
-/* Main / Common */
+/* General/Common */
 body {
     margin: 0;
     font-family: Inter, sans-serif;
     color: #201a2d;
-    font-size: 1rem;
+    font-size: 1rem; /* 16px, as 1rem is relative to the root font-size */
     line-height: 1.5;
     scrollbar-width: thin;
     scroll-behavior: smooth;
@@ -12,23 +12,26 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 3.25rem;
+    font-size: 3rem; /* Instead of 3.25rem, reduce for responsiveness */
     line-height: 1.2;
     font-weight: 700;
 }
+
 h2 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 3.125rem;
+    font-size: 2.5rem; /* Reduced for smaller screens */
     line-height: 1.2;
     font-weight: 700;
 }
 
 p {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem; /* Keep font size relative to body */
     color: rgba(32, 26, 45, .6);
 }
+
 /* Nav Bar */
 #navbar {
     font-size: 14px;
@@ -38,9 +41,8 @@ p {
     padding: 15px 0 15px 0;
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 9999;
     width: -webkit-fill-available;
-    
 }
 
 #main-logo-img {
@@ -64,7 +66,7 @@ p {
     -webkit-text-size-adjust: 100%;
     font-family: Inter, sans-serif;
     position: relative;
-    padding: 8px 12px; 
+    padding: 8px 12px;
     margin: 0;
     font-size: .875rem;
     cursor: pointer;
@@ -76,8 +78,13 @@ p {
     color: #f3f5fc;
     font-weight: 600;
     text-align: center;
-    transition: all .10s cubic-bezier(.89,1.02,1,-0.74) .2s ;
+    transition: all .10s cubic-bezier(.89,1.02,1,-0.74) .2s;
 }
+
+#menu-icon {
+    display: none;
+}
+
 
 .nav-link:hover {
     border-bottom: 2px solid #fcbf49;
@@ -88,6 +95,7 @@ p {
 }
 
 .nav-link.about-active {
+    transition: all .5s linear;
     border-bottom: 3px solid #fcbf49;
     font-weight: 600;
   }
@@ -106,11 +114,12 @@ p {
 #sec-1 {
     display: flex;
     justify-content: space-around;
-    padding: 200px 100px 30px 200px;
+    padding: 10% 5%;
     margin: 0;
-    position: relative;
     background-color: #F3F5FC;
     width: auto;
+    position: relative;
+    background-color: #F3F5FC;
 
 }
 
@@ -349,7 +358,6 @@ p {
     margin-bottom: 5px;
     text-align: center;
     color: #201a2d;
-    
 }
 
 .commented-video-details-div {
@@ -357,7 +365,6 @@ p {
     align-items: center;
     padding: 5px 10px;
 }
-
 .comment-body {
     border: .0625rem solid rgba(95, 179, 189, .2);
     width: 437.462px;
@@ -366,7 +373,6 @@ p {
     padding: 2rem;
     border-radius: 1rem;
     background-color: #f3fcf4;
-    -webkit-transition: .6s cubic-bezier(.215, .61, .355, 1);
     transition: .6s cubic-bezier(.215, .61, .355, 1);
 }
 
@@ -561,3 +567,8 @@ form {
     width: 300px;
     font-size: 13px;
 }
+
+
+/* respnsive */
+/* * Mobile and Tablet (max-width: 768px) */ 
+
