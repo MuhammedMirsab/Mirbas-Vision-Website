@@ -570,5 +570,135 @@ form {
 
 
 /* respnsive */
-/* * Mobile and Tablet (max-width: 768px) */ 
+/* Mobile screens (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white; /* Menu background color */
+        padding: 20px 0;
+    }
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1rem;
+        text-align: center;
+        color: #201a2d; /* Ensure the link color is visible on white */
+        text-decoration: none;
+    }
+    .nav-link:hover {
+        background-color: #f0f0f0; /* Add hover effect for mobile links */
+    }
+    #yt-channel-btn {
+        display: none; /* Hide button outside the menu in mobile */
+    }
+    #nav-links #yt-channel-btn {
+        display: block; /* Display inside menu */
+        width: 90%;
+        text-align: center;
+        margin: 10px auto;
+        background-color: #FF0000; /* Make button color pop */
+        color: white;
+        padding: 10px 0;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+}
 
+/* Tablet screens (481px to 1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: white; /* Menu background color */
+        padding: 20px 0;
+    }
+    #menu-icon {
+        display: block;
+        font-size: 2rem;
+    }
+    .nav-link {
+        display: block;
+        padding: 15px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #201a2d; /* Ensure link color stands out on white */
+        text-decoration: none;
+    }
+    .nav-link:hover {
+        background-color: #f0f0f0; /* Add hover effect for tablet links */
+    }
+    #yt-channel-btn {
+        display: none; /* Hide button outside the menu in tablet */
+    }
+    #nav-links #yt-channel-btn {
+        display: block; /* Display inside menu */
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        background-color: #FF0000;
+        color: white;
+        padding: 10px 0;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+}
+
+/* Computer screens (unchanged, above 1024px) */
+@media only screen and (min-width: 1025px) {
+    #navbar {
+        font-size: 14px;
+        font-family: Inter, sans-serif;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0 15px 0;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        width: -webkit-fill-available;
+    }
+    #nav-links {
+        display: block;
+        /* flex-direction: row;
+        justify-content: space-around; */
+    }
+    #yt-channel-btn {
+        display: block; /* Button is always visible on computers */
+    }
+    #menu-icon {
+        display: none; /* No menu icon on larger screens */
+    }
+
+    .nav-link:hover {
+        border-bottom: 2px solid #fcbf49;
+        color: black;
+        padding-bottom: 0.5px;
+        font-weight: 600;
+        
+    }
+    
+    .nav-link.about-active {
+        transition: all .5s linear;
+        border-bottom: 3px solid #fcbf49;
+        font-weight: 600;
+      }
+}
